@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="jokeIconTopMargin">128dp</dimen>
+    <dimen name="display_activity_padding">8dp</dimen>
+    <dimen name="icon_dimension">112dp</dimen>
+    <dimen name="joke_content_padding">16dp</dimen>
+    <dimen name="joke_text_size">16sp</dimen>
+</resources>

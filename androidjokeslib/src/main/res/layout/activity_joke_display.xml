@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/display_activity_padding"
+    tools:context="com.example.android.androidjokeslib.JokeDisplayActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/jokeBackground"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/icon_dimension"
+            android:layout_height="@dimen/icon_dimension"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/display_activity_padding"
+            android:layout_marginStart="@dimen/display_activity_padding"
+            android:layout_marginTop="@dimen/jokeIconTopMargin"
+            android:contentDescription="@string/smiling_icon"
+            app:srcCompat="@drawable/ic_giraffe" />
+
+        <TextView
+            android:id="@+id/tv_joke_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/joke_content_padding"
+            android:gravity="center"
+            android:paddingEnd="@dimen/joke_content_padding"
+            android:paddingLeft="@dimen/joke_content_padding"
+            android:paddingRight="@dimen/joke_content_padding"
+            android:paddingStart="@dimen/joke_content_padding"
+            android:textSize="@dimen/joke_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Joke content" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
